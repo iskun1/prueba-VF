@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'VodafoneLt';
+    src: url('fonts/VodafoneLt-Regular.eot');
+    src: 
+         url('fonts/VodafoneLt-Regular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/VodafoneLt-Regular.woff') format('woff'),
+         url('fonts/VodafoneLt-Regular.ttf') format('truetype'),
+         url('fonts/VodafoneLt-Regular.svg#open-sans') format('svg');
+}
+@font-face {
+    font-family: 'VodafoneRg';
+    src: url('fonts/VodafoneRg.eot');
+    src: 
+         url('fonts/VodafoneRg.eot?#iefix') format('embedded-opentype'),
+         url('fonts/VodafoneRg.woff') format('woff'),
+         url('fonts/VodafoneRg.ttf') format('truetype'),
+         url('fonts/VodafoneRg.svg#open-sans') format('svg');
+}
+
+body
+{
+    font-family: 'VodafoneLt';
+    color: #ffffff;
+}
+
+header
+{
+    max-width: 1280px;
+    height: 102px;
+}
+.wrapper
+{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.head 
+{
+    width: 100%;
+    background: url("images/bg-head/rectangle-3.png") no-repeat center center;
+    background-size: cover;
+    .content-head
+    {
+        padding: 45px 10px;
+        
+        .logo
+        {
+            width: 151.5px;
+            margin:0 auto;
+
+            img
+            {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+        h2,p,a 
+        {
+            margin:15px 0;
+        }
+        h2
+        {
+            font-family: VodafoneRg;
+            font-size: 44px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            
+        }
+        p
+        {
+            text-align: center;
+            font-family: VodafoneLt;
+            font-size: 30px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #ffffff;
+            &:nth-of-type(2)
+            {
+                font-weight: bold;
+                font-family: VodafoneRg;    
+            }
+        }
+        a 
+        {
+            max-width: 7%;
+            display: block;
+            margin:0 auto;
+            text-decoration: none;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px;
+            background-color: #e60000;
+            @media only screen and (max-width: 768px)
+              {
+                max-width: 100%;
+              }
+            
+        }
+    }
+}
