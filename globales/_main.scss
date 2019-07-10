@@ -96,11 +96,170 @@ header
             text-align: center;
             padding: 15px;
             background-color: #e60000;
-            @media only screen and (max-width: 768px)
-              {
-                max-width: 100%;
-              }
+           
             
         }
     }
 }
+.breadcrumbs
+{
+  height: 60px;
+  margin-top: -3px;
+  padding: 0 65px;
+  line-height: 60px;
+  background-color: #666666;
+
+
+}
+.featured
+{
+    background-color: #333333;
+    padding-left:65px;
+    padding-right:65px;
+    padding-bottom: 79px;
+    @media only screen and (max-width: 768px)
+      {
+        
+        margin-top: -3px;
+        padding-left:10px;
+        padding-right:10px;
+        
+      }
+
+
+    h1
+    {
+        font-family: VodafoneLt;
+        font-size: 36px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        width: 100%;
+        padding: 50px 0;
+    }
+    
+    .featured-items
+    {
+        position: relative;
+        overflow: hidden;
+        height: 400px;
+        .slider
+        {
+            display: flex;
+            position: absolute;
+            width: 100%;
+            @media only screen and (max-width: 768px)
+              {
+                width: 300%;
+              }
+            li 
+            {
+                border: solid 1px #999999;
+                margin-right: 10px;
+                figure 
+                {
+                    width: 100%;
+                    img
+                    {
+                        height: 146px;
+                        width: 100%;
+                        max-width: 100%;
+                        //Altura de la imagen en dispositivos móviles.
+                        @media only screen and (max-width: 768px)
+                          {
+                            height: 119px;
+                          }
+                    }
+                    figcaption
+                    {
+                        padding: 30px 0;
+                        h2
+                        {
+                            font-family: VodafoneRg;
+                            font-size: 20px;
+                            font-weight: bold;
+                            font-style: normal;
+                            font-stretch: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: center;
+
+                        }
+                        p
+                        {
+                            font-family: VodafoneRg;
+                            font-size: 16px;
+                            font-weight: normal;
+                            font-style: normal;
+                            font-stretch: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: center;
+                            padding: 15px 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+   
+    
+    h3
+    {
+          font-family: VodafoneLt;
+          font-size: 36px;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: center;
+          padding: 50px 0;
+
+
+    }
+    .more-featured
+    {
+        display: flex;
+        flex-wrap: wrap;
+        font-family: VodafoneRg;
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 18px;
+        letter-spacing: normal;
+        ul 
+        {
+            width: 50%;
+            @media only screen and (max-width: 768px)
+          {
+            
+            width: 100%;
+          }
+            li
+            {
+                
+                img
+                {
+                    padding-right: 10px;
+                }
+                strong
+                {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .tick-or-solved 
+    {
+        width: 24px;
+        object-fit: contain;
+
+    }
+}
+
+
